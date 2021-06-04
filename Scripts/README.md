@@ -13,8 +13,26 @@ To set up the Python environment needed to run this algorithm:
     conda env create -f environment.yml -n IGTD
     conda activate IGTD
     ```
-5.  Run the Example_Run.py script for demo.
+5.  Run the [./Example_Run.py](./Example_Run.py) script for demo. 
+
+This demo runs the IGTD algorithm using two configurations. The first configuration uses the Euclidean distance for calculating pairwise feature distances and pariwise pixel distances and the absolute function for evaluating the difference between the feature distance ranking matrix and the pixel distance ranking matrix. The first configuration saves the result in [../Resutls/Test_1](../Resutls/Test_1) folder. We have included some samples resutls as example.
+
+The second configuration runs the IGTD algorithm using the Pearson correlation coefficient for calculating pairwise feature distances, the Manhattan distance for calculating pariwise pixel distances, and the square function for evaluating the difference between the feature distance ranking matrix and the pixel distance ranking matrix. The second configuration saves the result in [../Resutls/Test_2](../Resutls/Test_2) folder. We have included some samples resutls as example.
+
+The sample output from Example_Run.py shows the conversion of the algorithm for the two configurations described above: 
+
+```
+python Example_Run.py
+Step 0 err: 54021791215.0
+.....
+Step 5165 err: 25092527089.0
+Step 0 err: 1.0993404642421798e+16
+....
+Step 4488 err: 3518731791808334.0
+```
+
+
 
 ## Use IGTD to Convert Tabular Data into Images
 
-The IGTD_Functions.py script provides all the functions used by the IGTD algorithm. Please see comments in the script for explanations about the inputs and outputs of all functions. table_to_image is the main function for running the IGTD algorithm. min_max_transform is the function to preprocess input data, so that the minimum and maximum values of each feature are linearly scaled to 0 and 1, respectively. Example_Run.py provides exmaples demonstrating how to use the functions for running the IGTD algorithm. 
+The [./IGTD_Functions.py](./IGTD_Functions.py) script provides all the functions used by the IGTD algorithm. Please see comments in the script for explanations about the inputs and outputs of all functions. table_to_image is the main function for running the IGTD algorithm. min_max_transform is the function to preprocess input data, so that the minimum and maximum values of each feature are linearly scaled to 0 and 1, respectively. Example_Run.py provides exmaples demonstrating how to use the functions for running the IGTD algorithm. 
