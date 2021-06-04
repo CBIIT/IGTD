@@ -32,4 +32,4 @@ The package also includes a small dataset for demonstrating its utility, which i
 
 ## Technical Details
 
-Refer to this [README](https://github.com/zhuyitan/IGTD/tree/main/Scripts).
+Refer to this [README](./Scripts).
