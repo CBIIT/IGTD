@@ -15,9 +15,9 @@ To set up the Python environment needed to run this algorithm:
     ```
 5.  Run the [./Example_Run.py](./Example_Run.py) script for demo. 
 
-This demo runs the IGTD algorithm using two configurations. The first configuration uses the Euclidean distance for calculating pairwise feature distances and pariwise pixel distances and the absolute function for evaluating the difference between the feature distance ranking matrix and the pixel distance ranking matrix. The first configuration saves the result in [../Resutls/Test_1](../Resutls/Test_1) folder. We have included some samples resutls as example.
+This demo runs the IGTD algorithm using two configurations. The first configuration uses the Euclidean distance for calculating pairwise feature distances and pariwise pixel distances and the absolute function for evaluating the difference between the feature distance ranking matrix and the pixel distance ranking matrix. The first configuration saves the result in [../Results/Test_1](../Results/Test_1) folder. We have included some samples resutls as example.
 
-The second configuration runs the IGTD algorithm using the Pearson correlation coefficient for calculating pairwise feature distances, the Manhattan distance for calculating pariwise pixel distances, and the square function for evaluating the difference between the feature distance ranking matrix and the pixel distance ranking matrix. The second configuration saves the result in [../Resutls/Test_2](../Resutls/Test_2) folder. We have included some samples resutls as example.
+The second configuration runs the IGTD algorithm using the Pearson correlation coefficient for calculating pairwise feature distances, the Manhattan distance for calculating pariwise pixel distances, and the square function for evaluating the difference between the feature distance ranking matrix and the pixel distance ranking matrix. The second configuration saves the result in [../Results/Test_2](../Results/Test_2) folder. We have included some samples resutls as example.
 
 The sample output from Example_Run.py shows the conversion of the algorithm for the two configurations described above: 
 
