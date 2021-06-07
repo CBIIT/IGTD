@@ -2,6 +2,18 @@
 
 Image Generator for Tabular Data (IGTD) transforms tabular data into images. The algorithm assigns each feature to a pixel in the image. According to the assignment, an image is generated for each data sample, in which the pixel intensity reflects the value of the corresponding feature in the sample. The algorithm searches for an optimized assignment of features to pixels by minimizing the difference between the ranking of pairwise distances between features and the ranking of pairwise distances between the assigned pixels, where the distances between pixels are calculated based on their coordinates in the image. Minimizing the difference between the two rankings assigns similar features to neighboring pixels and dissimilar features to pixels that are far apart. The optimization is achieved through an iterative process of swapping the pixel assignments of two features. In each iteration, the algorithm identifies the feature that has not been considered for swapping for the longest time, and seeks for a feature swapping for it that reduces the difference between the two rankings most.   
 
+
+## FAQs:
+
+* Q: Is the method generally applicable to any type of data?
+A: Yes it can be applied to any type of tabular data
+* Q: Are there any constrain on the size of the data (minimum, maximum)?
+A: No. But apparently, if there are too few features and samples, it is not practically meaningful to apply the algorithm.
+* Q: Are there any specific parameters, or statistical characteristics in the input data that need to be present for the algorithm to work?
+A: The algorithm requires several input parameters, as explained by the comments in the provided scripts. The user needs to have basic knowledge about the IGTD algorithm to use the package, and the linked IGTD publication.
+* Q: Can we the generate image be in 3D, or 1D, or other dimensions?
+A: Yes. IGTD is very flexible, the current implementation covers 1D and 2D, the algorithm can be extended to 3D.
+
 ## Setup
 
 To set up the Python environment needed to run this algorithm:
