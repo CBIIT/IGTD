@@ -11,7 +11,10 @@ Users interested in the following subjects:
 
 ## Usability
 
-To use the software package in this repository, users must possess the basic skills to program and run Python scripts. Users need to process the input data into the data format accepted by the package. Users also need to understand the input parameters of the IGTD algorithm, so that they can set the parameters appropriately to execute the algorithm.
+To use the software package in this repository,  users must meet the following criteria:
+* Possess the basic skills to program and run Python scripts. 
+* Able to process the input data into the data format accepted by the package. 
+* Understand the input parameters of the IGTD algorithm, so that they can set the parameters appropriately to execute the algorithm.
 
 ## Uniqueness
 
@@ -27,7 +30,7 @@ IGTD is a novel algorithm for transforming tabular data into images. Compared wi
 
 The Scripts folder in this repository includes the following Python scripts: 
 * IGTD_Functions.py provides all the functions used by the IGTD algorithm. It provides comments explaining the input and output of each function.
-* Example_Run.py provides examples showing how to run the IGTD algorithm for demo purpose.
+* Example_Run.py provides examples showing how to run the IGTD algorithm for demonstration purposes.
 
 The Data folder in this repository includes a small dataset for demonstrating its utility, which is a gene expression dataset including 100 cancer cell lines and 1600 genes. 
 
