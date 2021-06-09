@@ -21,8 +21,8 @@ To use the software package in this repository,  users must meet the following c
 IGTD is a novel algorithm for transforming tabular data into images. Compared with existing methods for converting tabular data into images, IGTD has several advantages. 
 - IGTD does not require prior knowledge about the features. Thus, users can use it even without domain knowledge. 
 - IGTD generates compact image representations, in which each pixel represents a unique feature. Deep learning based on compact image representations usually requires less memory and time to train the prediction model.
-- IGTD has been shown to generate compact image representations promptly, which also better preserve the feature neighborhood structure. 
-&#x1F534;_**(Question: Can we specify who or what showed it, to avoid the passive "has been shown" wording?)**_
+- IGTD has been shown to generate compact image representations promptly, which also better preserves the feature neighborhood structure. 
+&#x1F534;_**(Question: Can we specify who or what showed it, to avoid the passive "has been shown" wording? Or can we just say "IGTD generates compact ..."?)**_
 - CNNs trained on IGTD images achieve a better (or similar) prediction performance than both CNNs trained on alternative image representations and prediction models trained on the original tabular data. 
 - IGTD provides a flexible framework that users can extend to accommodate diversified data and requirements. In this flexible framework, users can choose size and shape of the image representation.  
 
