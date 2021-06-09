@@ -26,8 +26,8 @@ IGTD is a novel algorithm for transforming tabular data into images. Compared wi
 ## Components
 
 The package includes two Python scripts. 
-1. IGTD_Functions.py provides all the functions used by the IGTD algorithm. It provides comments explaining the input and output of each function.
-2. Example_Run.py provides examples showing how to run the IGTD algorithm for demo purpose.
+* IGTD_Functions.py provides all the functions used by the IGTD algorithm. It provides comments explaining the input and output of each function.
+* Example_Run.py provides examples showing how to run the IGTD algorithm for demo purpose.
 
 The package also includes a small dataset for demonstrating its utility, which is a gene expression dataset including 100 cancer cell lines and 1600 genes. 
 
