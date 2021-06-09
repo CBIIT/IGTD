@@ -36,4 +36,4 @@ The Data folder in this repository includes a small dataset for demonstrating it
 
 ## Technical Details
 
-Refer to this [README](.README.md) and the [Scripts](./Scripts) folder.
+Refer to this [README](./Scripts/README.md) and the [Scripts](./Scripts) folder.
