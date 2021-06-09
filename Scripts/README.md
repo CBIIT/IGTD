@@ -1,18 +1,18 @@
 ## Method Description
 
-Image Generator for Tabular Data (IGTD) transforms tabular data into images. The algorithm assigns each feature to a pixel in the image. According to the assignment, an image is generated for each data sample, in which the pixel intensity reflects the value of the corresponding feature in the sample. The algorithm searches for an optimized assignment of features to pixels by minimizing the difference between the ranking of pairwise distances between features and the ranking of pairwise distances between the assigned pixels, where the distances between pixels are calculated based on their coordinates in the image. Minimizing the difference between the two rankings assigns similar features to neighboring pixels and dissimilar features to pixels that are far apart. The optimization is achieved through an iterative process of swapping the pixel assignments of two features. In each iteration, the algorithm identifies the feature that has not been considered for swapping for the longest time, and seeks for a feature swapping for it that reduces the difference between the two rankings most.   
+Image Generator for Tabular Data (IGTD) transforms tabular data into images. The algorithm assigns each feature to a pixel in the image. According to the assignment, the algorithm generates an image for each data sample, in which the pixel intensity reflects the value of the corresponding feature in the sample. The algorithm searches for an optimized assignment of features to pixels by minimizing the difference between the ranking of pairwise distances between features and the ranking of pairwise distances between the assigned pixels, where the algorithm calculates the distances between pixels based on their coordinates in the image. Minimizing the difference between the two rankings assigns similar features to neighboring pixels and dissimilar features to pixels that are far apart. The algorithm achieves optimization through an iterative process of swapping the pixel assignments of two features. In each iteration, the algorithm identifies the feature that it has not considered for swapping for the longest time, and seeks for a feature swapping for it that reduces the difference between the two rankings most.   
 
 
 ## FAQs:
 
 * Q: Is the method generally applicable to any type of data?
-A: Yes it can be applied to any type of tabular data
+A: Yes, users can apply it to any type of tabular data
 * Q: Are there any constrain on the size of the data (minimum, maximum)?
 A: No. But apparently, if there are too few features and samples, it is not practically meaningful to apply the algorithm.
 * Q: Are there any specific parameters, or statistical characteristics in the input data that need to be present for the algorithm to work?
 A: The algorithm requires several input parameters, as explained by the comments in the provided scripts. The user needs to have basic knowledge about the IGTD algorithm to use the package, and the linked IGTD publication.
 * Q: Can we the generate image be in 3D, or 1D, or other dimensions?
-A: Yes. IGTD is very flexible, the current implementation covers 1D and 2D, the algorithm can be extended to 3D.
+A: Yes. IGTD is very flexible, the current implementation covers 1D and 2D, and users can extend the algorithm to 3D.
 
 ## Setup
 
@@ -47,4 +47,4 @@ Step 4488 err: 3518731791808334.0
 
 ## Use IGTD to Convert Tabular Data into Images
 
-The [./IGTD_Functions.py](./IGTD_Functions.py) script provides all the functions used by the IGTD algorithm. Please see comments in the script for explanations about the inputs and outputs of all functions. table_to_image is the main function for running the IGTD algorithm. min_max_transform is the function to preprocess input data, so that the minimum and maximum values of each feature are linearly scaled to 0 and 1, respectively. Example_Run.py provides exmaples demonstrating how to use the functions for running the IGTD algorithm. 
+The [./IGTD_Functions.py](./IGTD_Functions.py) script provides all the functions used by the IGTD algorithm. Please see comments in the script for explanations about the inputs and outputs of all functions. table_to_image is the main function for running the IGTD algorithm. min_max_transform is the function to preprocess input data, scaling the minimum and maximum values of each feature linearly to 0 and 1, respectively. Example_Run.py provides exmaples demonstrating how to use the functions for running the IGTD algorithm. 
